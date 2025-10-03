@@ -1,0 +1,390 @@
+.find-container {
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  padding: 60px 0px;
+  /* background-color: #E8E2DA; */
+  min-height: 100vh;
+  color: black;
+  background-color: var(--bg-color);
+   
+}
+
+.find-container h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.find-container p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.date-input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.find-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.find-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.result-card {
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  display: inline-block;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.zodiac-img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+
+.result-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.result-card p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.fun-message {
+  margin-top: 15px;
+  font-style: italic;
+  color: #ffe;
+}
+
+.compat-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  margin-left: 80px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.compat-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+
+.services-section {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #21212C;
+    /* --section-bg-dark: #21212C; */
+  margin-top: 150px;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+}
+
+.services-section::before {
+  content: "";
+  position: absolute;
+  background-image: url('/src/assets/images/bg-dark.png');
+  background-position: 80% 140%;
+  z-index: 0;
+  opacity: 0.1;
+  inset:0;
+
+}
+
+.services-header{
+  width: 500px;
+margin-left: 500px;
+margin-bottom: 60px;
+margin-top: 80px;
+}
+
+.services-header .faStar {
+  font-size: 50px;
+  color:#FAB119;
+}
+
+.subtitle {
+  color: #D5846E;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.services-header h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color:#FFFFFF;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: center;
+  row-gap: 40px;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  /* width: 1200px; */
+  width: 100%;         /* Düzəltdim */
+  max-width: 1200px;   /* İstəyə görə maksimal genişlik */
+  margin: 0 auto 80px;
+}
+
+.service-card {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* width: 300px; */
+  width: 30%;   /* 3 kart yan-yana üçün */
+  min-width: 250px; /* Kiçik ekranlarda sıxılmasın */
+  height: 330px;
+  padding: 40px 30px;
+  text-align: left;
+
+}
+.service-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.service-card h4 {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.service-card p {
+  color: #8F8F9A;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.astrology-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px 120px;
+  color: #fff;
+  margin-top: 150px;
+}
+
+.video-container {
+  flex: 1;
+  width: 500px;
+}
+
+.video-embed {
+  width: 600px;
+  height: 400px;
+  border: none;
+}
+
+.text-container {
+  flex: 1;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.subtitle {
+  color: #B4975D;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.learn-more {
+  color: #B4975D;
+  font-weight: 500;
+  padding-bottom: 2px;
+  transition: 0.3s;
+  font-size: 25px;
+}
+
+.learn-more:hover {
+  color: #ff8c42;
+}
+
+
+/* --- MOBILE --- */
+@media (max-width: 480px) {
+  .find-container {
+    padding: 40px 15px;
+  }
+  
+  .find-container h1 {
+    font-size: 28px;
+  }
+
+  .date-input, .find-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .result-card {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .zodiac-img {
+    width: 150px;
+    height: 150px;
+    margin-left: 0;
+  }
+
+  .compat-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .services-header {
+    width: 100%;
+    margin: 40px 0 40px 0;
+    text-align: center;
+  }
+
+  .services-cards {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  .service-card {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .astrology-section {
+    flex-direction: column;
+    padding: 40px 15px;
+    gap: 30px;
+  }
+
+  .video-embed {
+    width: 250px;
+    height: 200px;
+  }
+
+  .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .learn-more {
+    font-size: 18px;
+  }
+    .information{
+    font-size:40px;
+    }
+}
+
+/* --- TABLET --- */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .find-container {
+    padding: 50px 30px;
+  }
+
+  .find-container h1 {
+    font-size: 34px;
+  }
+
+  .result-card {
+    max-width: 70%;
+  }
+
+  .zodiac-img {
+    width: 180px;
+    height: 180px;
+    margin-left: 50px;
+  }
+
+  .compat-btn {
+    margin-left: 50px;
+  }
+
+  .services-header {
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+  }
+
+  .services-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .service-card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .astrology-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 60px 30px;
+    gap: 20px;
+  }
+
+  .video-embed {
+    width:  500px;
+    max-width: 400px;
+    height: 250px;
+  }
+
+  .text-container {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* --- DESKTOP --- */
+@media (min-width: 1025px) {
+  .information{
+    font-size:70px;
+}
+}

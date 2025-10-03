@@ -1,0 +1,164 @@
+.cart-table {
+  margin: 40px 100px;
+  /* background-color: #f3efe9; */
+  padding: 10px;
+  text-align: center;
+}
+.cart-table h1{
+    color: #b48c59;
+    margin-bottom: 35px;
+}
+.cart-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+  text-align: center;
+  padding: 8px;
+  font-size: 25px;
+}
+
+.product-info2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+  width: 20px;
+}
+
+
+
+.product-info2 img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+
+.price,
+.subtotal {
+  color: #b48c59;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #b48c59;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #000;
+}
+.cart-table input{
+  height: 40px;
+  width: 70px;
+  margin-left: 20px;
+  border: 1px solid #b48c59;
+  padding-left: 5px;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+
+.cart-table th:nth-child(3), /* 3-cü sütun = Product başlığı */
+.cart-table td:nth-child(3) { /* 3-cü sütun = məhsul adı */
+  padding-left: 100px; /* məsafəni buradan idarə et */
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet (768px – 1024px) */
+@media (max-width: 1024px) {
+  .cart-table {
+    margin: 20px 40px;
+    padding: 10px;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .product-info img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cart-total {
+    font-size: 16px;
+  }
+}
+
+/* Mobil (max 767px) */
+@media (max-width: 767px) {
+  .cart-table {
+    margin: 10px;
+    padding: 5px;
+  }
+
+  /* Cədvəli card görünüşünə çeviririk */
+  .cart-table table,
+  .cart-table thead,
+  .cart-table tbody,
+  .cart-table th,
+  .cart-table td,
+  .cart-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .cart-table thead {
+    display: none; 
+  }
+
+  .cart-table tr {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .cart-table td {
+    text-align: left;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .product-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-info img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .remove-btn {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .cart-total {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}

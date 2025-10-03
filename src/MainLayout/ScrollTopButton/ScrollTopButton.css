@@ -1,0 +1,60 @@
+ .scroll-top {
+  position: fixed;
+  bottom: 54px;
+  right: 10px;
+  background-color: #d5846e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  background-color: #b0533c;
+} 
+
+
+
+
+/* --------------- RESPONSIVE ---------------- */
+
+/* Mobil */
+@media (max-width: 767px) {
+  .scroll-top {
+    bottom: 20px;
+    right: 10px;
+    padding: 8px;
+    font-size: 18px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .scroll-top {
+    bottom: 20px;
+    right: 15px;
+    padding: 10px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .scroll-top {
+    bottom: 20px;
+    right: 20px;
+    padding: 12px;
+    font-size: 20px;
+  }
+}

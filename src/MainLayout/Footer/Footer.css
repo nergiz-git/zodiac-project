@@ -1,0 +1,225 @@
+.footer {
+  /* background-color: #f8f6f2; */
+  padding: 85px 100px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  position: relative;
+  /* background: #EEEBE6; */
+  background-color: var(--footer-color);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/src/assets/images/bg-content-section-astro.png") center/cover no-repeat;
+  background-position: 80% 50%;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+
+.footer-center {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-subscribe {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+}
+
+.footer-btn {
+  background-color: #b99759;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  transition: 0.3s;
+}
+
+.footer-btn:hover {
+  background-color: #a17f44;
+}
+
+.footer-note {
+  font-size: 12px;
+  color: #555;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #b99759;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #777;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+/* ✅ Mobile (max 767px) */
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    min-width: 100%;
+  }
+
+
+    .footer-text{
+    margin-left: 60px;
+  }
+  .footer-subscribe {
+    flex-direction: column;
+  }
+
+  .footer-input {
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  .footer-btn {
+    border-radius: 3px;
+    width: 100%;
+  }
+
+  .foot {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* ✅ Tablet (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1 1 45%;
+    text-align: left;
+  }
+
+  .footer-subscribe {
+    flex-direction: row;
+  }
+
+
+  .foot {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-links {
+    justify-content: flex-end;
+    gap: 15px;
+  }
+}
+
+/* ✅ Desktop (1024px və yuxarı) */
+@media (min-width: 1024px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1;
+    text-align: left;
+  }
+
+  .footer-links {
+    justify-content: flex-end;
+  }
+  
+
+}

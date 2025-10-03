@@ -1,0 +1,40 @@
+:root {
+  --bg-color: #EEEBE6;
+  --text-color: #585858;
+
+   --section-bg-dark: #21212C;
+    --heading-color: #000000;
+
+  --navbar-bg: #EEEBE6;
+  --nav-text: #000000;
+
+  --button-bg: #ff6600;
+  --button-text: #ffffff;
+  --about-title:#1d1d1d;
+  --about-description:#555;
+  --company:#181828;
+  --discover-text:#333;
+  --services-section: #21212C;
+  --footer-color:#EEEBE6;
+
+  
+}
+
+[data-theme="dark"] {
+  --section-bg-dark: #ffffff;
+  --heading-color: #ffffff;   
+  --services-section:#ffffff;
+  --bg-color: #21212C;
+  --text-color: #ffffff;
+  --about-title: #ffffff;
+  --about-description: #ffffff;
+  --company:#ffffff;
+
+  --navbar-bg: #1e1e1e;
+  --nav-text: #ffffff;
+
+  --button-bg: #ff9900;
+  --button-text: #000000;
+  --discover-text:#ffffff;
+  --footer-color:#1A1A1A;
+}
