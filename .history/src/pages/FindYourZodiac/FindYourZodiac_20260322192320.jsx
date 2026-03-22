@@ -9,10 +9,10 @@ import leoImg from "/src/assets/images/Leo.png";
 import virgoImg from "/src/assets/images/Virgo.png";
 import libraImg from "/src/assets/images/Libra.png";
 import scorpioImg from "/src/assets/images/Scorpio.png";
-import sagittariusImg from "/src/assets/images/Sagittarius.png";
-import capricornImg from "/src/assets/images/Capricorn.png";
-import aquariusImg from "/src/assets/images/Aquarius.png";
-import piscesImg from "/src/assets/images/Pisces.png";
+import sagittariusImg from "/src/assets/images/sagittarius.png";
+import capricornImg from "/src/assets/images/capricorn.png";
+import aquariusImg from "/src/assets/images/aquarius.png";
+import piscesImg from "/src/assets/images/pisces.png";
 import { FaStar } from "react-icons/fa6";
 
 

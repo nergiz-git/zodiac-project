@@ -12,7 +12,7 @@ import scorpioImg from "/src/assets/images/Scorpio.png";
 import sagittariusImg from "/src/assets/images/Sagittarius.png";
 import capricornImg from "/src/assets/images/Capricorn.png";
 import aquariusImg from "/src/assets/images/Aquarius.png";
-import piscesImg from "/src/assets/images/Pisces.png";
+import piscesImg from "/src/assets/images/pisces.png";
 import { FaStar } from "react-icons/fa6";
 
 
